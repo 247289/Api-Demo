@@ -11,9 +11,11 @@ using WebApi.Models;
 
 namespace WebApi.Controller.api
 {
+    [System.Web.Http.RoutePrefix("apis")]
     public class SinhVienController : ApiController
     {
         SinhVienModels dao = new SinhVienModels();
+        [System.Web.Http.HttpGet]
         public IHttpActionResult GetSV()
         {
             IList<SinhVien> list = dao.GetData();
@@ -21,7 +23,7 @@ namespace WebApi.Controller.api
                 return NotFound();
             return Ok(list);
         }
-
+        [System.Web.Http.HttpPost]
         public IHttpActionResult PostSV([FromBody] SinhVien sv)
         {
             if (!ModelState.IsValid)
@@ -30,7 +32,7 @@ namespace WebApi.Controller.api
             dao.PostData(sv);
             return Ok();
         }
-
+        [System.Web.Http.HttpPut]
         public IHttpActionResult PutSV([FromBody] SinhVien sv)
         {
             if (!ModelState.IsValid)
@@ -39,7 +41,7 @@ namespace WebApi.Controller.api
             dao.PutData(sv);
             return Ok();
         }
-
+        [System.Web.Http.HttpDelete]
         public IHttpActionResult DeleteSV(int maSV)
         {
             if (!ModelState.IsValid)
@@ -48,7 +50,8 @@ namespace WebApi.Controller.api
             dao.DeleteData(maSV);
             return Ok();
         }
-
+        [System.Web.Http.HttpGet]
+        [System.Web.Http.Route("getabc")]
         public IHttpActionResult Get(int masv)
         {
             IList<SinhVien> list = dao.FindData(masv);
