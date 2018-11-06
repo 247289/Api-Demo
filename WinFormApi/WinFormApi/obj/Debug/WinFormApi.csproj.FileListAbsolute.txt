@@ -50,3 +50,6 @@ E:\Code VS\CodeApi\WinFormApi\WinFormApi\bin\Debug\System.Web.WebPages.Razor.xml
 E:\Code VS\CodeApi\WinFormApi\WinFormApi\bin\Debug\System.Web.WebPages.xml
 E:\Code VS\CodeApi\WinFormApi\WinFormApi\bin\Debug\Antlr3.Runtime.pdb
 E:\Code VS\CodeApi\WinFormApi\WinFormApi\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Code VS\Api-Demo\WinFormApi\WinFormApi\bin\Debug\WinFormApi.exe.config
+E:\Code VS\Api-Demo\WinFormApi\WinFormApi\obj\Debug\WinFormApi.exe
+E:\Code VS\Api-Demo\WinFormApi\WinFormApi\obj\Debug\WinFormApi.pdb
