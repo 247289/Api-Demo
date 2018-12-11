@@ -28,6 +28,12 @@ namespace WebApi.DAO
             return lstSV;
         }
 
+        public int Add(SinhVien sinhVien)
+        {
+            db.SinhViens.Add(sinhVien);
+            db.SaveChanges();
+            return sinhVien.masv;
+        }
         public IList<SinhVien> FindData(int masv)
         {
             IList<SinhVien> lstSV = new List<SinhVien>();

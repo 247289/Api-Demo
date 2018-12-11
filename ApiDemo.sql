@@ -7,7 +7,6 @@ GO
 CREATE TABLE Lop(
 	malop INT IDENTITY PRIMARY KEY,
 	tenlop NVARCHAR(50)
-
 );
 go
 CREATE TABLE SinhVien(
@@ -26,7 +25,6 @@ CREATE TABLE MonHoc(
 );
 
 GO
-
 
 CREATE TABLE NamHoc(
 	manamhoc INT IDENTITY PRIMARY KEY,
@@ -212,3 +210,4 @@ SELECT * FROM dbo.Diem,dbo.SinhVien WHERE Diem.masv=dbo.SinhVien.masv AND Diem.m
 */
 
 --- test sql  quert
+GO
